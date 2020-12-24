@@ -1,0 +1,26 @@
+{
+  "name": "com.githubaction.nodejs.demo",
+  "version": "1.0.0",
+  "description": "Test github actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/* --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamton/github_actions_node_demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tamton/github_actions_node_demo/issues"
+  },
+  "homepage": "https://github.com/tamton/github_actions_node_demo#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "mocha": "^8.2.1",
+    "supertest": "^6.0.1"
+  }
+}
