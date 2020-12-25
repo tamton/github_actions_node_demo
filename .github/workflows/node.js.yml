@@ -41,8 +41,8 @@ jobs:
         aws-region: ap-southeast-1
     - name: deploy
       run: |
+        cd /home/ec2-user/github_actions_node_demo
         git pull origin master
-        cd github_actions_node_demo
         npm install --production
         pm2 restart node-app
       env:
