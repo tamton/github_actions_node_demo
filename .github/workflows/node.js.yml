@@ -29,6 +29,7 @@ jobs:
     - name: SSH and deploy node app
       run: |
         npm install --production
+        npm install pm2 -g
         pm2 restart node-app
       env:
         CI: true
