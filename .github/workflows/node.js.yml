@@ -38,7 +38,7 @@ jobs:
       with:
         host: ${{ secrets.DEV_AWS_HOST }}
         username: ${{ secrets.DEV_AWS_USER }}
-        key: ${{ secrets.DEV_AWS_KEY }}
+        password: ${{ secrets.DEV_AWS_PASSWORD }}
         script: |
           cd ~/github_actions_node_demo
           git pull origin master
