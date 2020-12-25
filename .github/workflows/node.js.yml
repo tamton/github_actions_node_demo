@@ -40,7 +40,11 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ap-southeast-1
         script: |
-          cd ~/node-github-demo
+          echo "go to project foler"
+          cd ./node-github-demo
+          echo "pull latest source code"
           git pull origin master
+          echo "instal lib"
           npm install --production
+          echo "restart server"
           pm2 restart node-app
