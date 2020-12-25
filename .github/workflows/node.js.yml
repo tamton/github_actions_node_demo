@@ -39,9 +39,8 @@ jobs:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ap-southeast-1
-    - name: deploy code
-      run: |
-        cd ./github_actions_node_demo
-        git pull origin master
-        npm install --production
-        pm2 restart node-app
+        script: |
+          cd ~/node-github-demo
+          git pull origin master
+          npm install --production
+          pm2 restart node-app
